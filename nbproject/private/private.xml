@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/models/validations/ValidationsRules.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/controllers/user/userController.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/public/views/index.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/controllers/user/insertController.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/controllers/offer/CampeonController.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/lib/class.phpmailer.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/models/Campeones.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/persistence/DAO/CampeonDAO.php</file>
+            <file>file:/C:/xampp/htdocs/RPGGame/app/public/views/Crear_Criatura.php</file>
+        </group>
     </open-files>
 </project-private>

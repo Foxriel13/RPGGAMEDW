@@ -1,27 +1,27 @@
 <?php
 //Es necesario que importemos los ficheros creados con anterioridad porque los vamos a utilizar desde este fichero.
-require_once(dirname(__FILE__) . '/../../../persistence/DAO/OfferDAO.php');
-require_once(dirname(__FILE__) . '/../../../app/models/Offer.php');
-require_once(dirname(__FILE__) . '/../../../app/models/validations/ValidationsRules.php');
+require_once(dirname(__FILE__) . '/../../../persistence/DAO/CampeonDAO.php');
+require_once(dirname(__FILE__) . '/../../../app/models/Campeones.php');
+require_once(dirname(__FILE__) . '/../../../app/models/validations/ValidationsRules.php');//TODO AQUI PARE
 
-$_offerController = new OfferController();
+$_CampeonController = new CampeonController();
 
 // Enrutamiento de las acciones
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($_POST["type"] == "create"){
-        $_offerController->createAction();
+        $_CampeonController->createAction();
     }
     else if ($_POST["type"] == "edit"){
-        $_offerController->editAction();
+        $_CampeonController->editAction();
     }
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
     //Llamo que hace la edición contra BD
-    $_offerController->deleteAction();
+    $_CampeonController->deleteAction();
 }
 
-class OfferController{
+class CampeonController{
     
     /**
      * Parameterless constractor.
@@ -31,8 +31,8 @@ class OfferController{
     
     // Obtención de la lista completa de ofertas
     function readAction() {
-        $offerDAO = new OfferDAO();
-        return $offerDAO->selectAll();
+        $campeonDAO = new CampeonDAO();
+        return $campeonDAO->selectAll();
     }
     
     // Función encargada de crear nuevas ofertas
